@@ -1,20 +1,36 @@
+import React, { useState } from "react";
 import "./App.css";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Chat from "./Chat";
+import Login from "./Login";
 
 function App() {
+  const [user, setUser] = useState(null);
   return (
-    // BEM naming convention
-
     <div className="App">
-      <h1>slack clone</h1>
+      <Router>
+        {!user ? (
+          <Login />
+        ) : (
+          <>
+            <Header />
+            <div className="app__body">
+              <Sidebar />
 
-      <Header />
+              <Switch>
+                <Route path="/room/:roomId">
+                  <Chat />
+                </Route>
+                <Route path="/"></Route>
+              </Switch>
+            </div>
+          </>
+        )}
 
-      {/* Sidebar */}
-      <Sidebar />
-
-      {/* Router -> chat Screen */}
+        {/* Router -> chat Screen */}
+      </Router>
     </div>
   );
 }
