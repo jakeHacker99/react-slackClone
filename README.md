@@ -15,7 +15,6 @@ database:
 }
 
 link: https://slack-clone2-d8374.web.app/
-
 ##
 ```
 Authors:  {jakob yaro }
