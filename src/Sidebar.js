@@ -17,6 +17,7 @@ import db from "./firebase";
 
 import SidebarOption from "./SidebarOption";
 import { useStateValue } from "./StateProvider";
+import ChatInput from "./ChatInput";
 
 const Sidebar = () => {
   const [channels, setChannels] = useState([]);
