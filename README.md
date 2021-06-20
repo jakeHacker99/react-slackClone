@@ -11,11 +11,10 @@ frontend:
 database: 
 	-firebase
 	-GoogleAuth
-	
-  
-link: https://slack-clone2-d8374.web.app/
-```
+``` 
 }
+
+link: https://slack-clone2-d8374.web.app/
 
 ##
 ```
