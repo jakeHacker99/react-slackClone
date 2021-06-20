@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Sidebar.css";
+import "../Css/Sidebar.css";
 
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 import CreateIcon from "@material-ui/icons/Create";
@@ -17,7 +17,6 @@ import db from "./firebase";
 
 import SidebarOption from "./SidebarOption";
 import { useStateValue } from "./StateProvider";
-import ChatInput from "./ChatInput";
 
 const Sidebar = () => {
   const [channels, setChannels] = useState([]);

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Message.css";
+import "../Css/Message.css";
 
 function Message({ message, timestamp, user, userImage }) {
   return (
